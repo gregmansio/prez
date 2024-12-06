@@ -1,0 +1,391 @@
+---
+title: "Focus métier : Consultant Data"
+author: "Grégoire Mansio"
+format: 
+  revealjs:
+      smaller: true
+      scrollable: true
+      self-contained: true
+---
+
+# Introduction
+
+Qui suis-je ?
+
+-   Grégoire Mansio: [linkedin](https://www.linkedin.com/in/gregoire-mansio-7b7660106), [github](https://github.com/gregmansio)
+
+## Formation & experiences
+
+-   L1 L2 Eco-géstion
+-   L3 Eco
+-   Master Analyse et politique économique
+
+::: incremental
+-   WTO Economic Research & Statistic Division, research intern
+
+-   PhD Candidate in Law & Economics: *Non-discriminatory injunctions in antitrust and regulation: a comparative analysis of zero-rating plans*
+
+-   HarvardX - Data Scientist (R)
+
+-   OpenClassrooms - Data Scientist (Python)
+
+-   Consultant Data: indépendant puis salarié pour Data Efficiency
+:::
+
+# Et vous ?
+
+::: panel-tabset
+## .
+
+-   Background économie, & autres ?
+
+::: incremental
+-   Qui parmi vous a déjà fait du traitement de données ?
+-   Vous avez déjà un pied dans la data ( STATA, R )
+:::
+
+## ex
+
+```{{r}}
+library(dplyr)
+
+a <- c(2,4,6)
+b <- a / 2
+c <- b %>%
+  append(4)
+
+print(c)
+```
+:::
+
+# La "Data"
+
+Selon vous, qu'est-ce qui est le plus précieux : les données elles-mêmes ou la manière dont elles sont utilisées ?
+
+## Institutions publiques
+
+Petite histoire de la data :
+
+::: incremental
+-   Premier producteur officiel de statistiques (données) nationales: Tabellverket (Bureau des Tables), Suède, 1749. Issu des premiers recensements ordonnés par la Suède à l'Eglise de Suède en 1686.
+
+-   France: Bureau de statistique, rattaché au ministère de l'Intérieur. Créé en 1800 à des fins de recensement et d'enquête sur les départements (nouvelle organisation territoriale). Aboutira en "INSEE" en 1946.
+
+-   Le bureau américain du recensement lance un concours en 1886 pour améliorer le processus de recensement.
+
+-   Herman Hollerith (1860-1929) gagne en brevetant une carte perforée pour "relever" ces statistiques.
+
+-   En 1896 il fonde IBM.
+
+-   IBM qui développera notamment les bases de données relationnelles (SQL), système de code barre, DRAM etc..
+
+-   -\> D'un besoin analytique naissent les outils de collecte, traitement ou classification.
+:::
+
+## Google Maps
+
+::: incremental
+-   Usage : définir un itinéraire
+
+-   Données : geoloc satellite, carte routière
+
+-   Usage : optimisation d'itinéraire
+
+-   Données : traffic, modes de transport
+
+-   Usage : Brest ok mais...
+
+-   Données : monuments, photo des lieux, commerces, horaires d'ouverture, menu des restaurants etc...
+
+-   Usage : "ah d'accord je n'y vais pas!"
+
+-   -\> Aide à la décision
+:::
+
+# La "Data"
+
+Selon vous, qu'est-ce qui est le plus précieux : les données elles-mêmes ou la manière dont elles sont utilisées ?
+
+::: incremental
+-   Les données n'ont que peu de valeur si elles ne sont pas transformées en insight(s) exploitable(s).
+
+-   C'est la demande qui guide l'offre de données. Si cette dernière n'est pas actionable, c'est une information inutile dans le contexte de l'analyse de données/l'analyse économique.
+:::
+
+# Enjeux demain
+
+![](M1%20EDD/impact%20des%20différentes%20tendances%20globales%20sur%20l'industrie%20manufacturière%20en%20france.JPG)
+
+# Les métiers
+
+## Data Analyste
+
+::: incremental
+-   Rôle principal : Analyser les données pour extraire des insights et aider à la prise de décision stratégique.
+-   Missions : Création de tableaux de bord, reporting, exploration de données, analyse descriptive.
+-   Outils courants : Excel, SQL, Power BI, Tableau, **Python** (pandas, matplotlib).
+-   Compétences clés : Visualisation, storytelling avec les données, compréhension des KPI métiers.
+:::
+
+## Data Scientist
+
+::: incremental
+-   Rôle principal : Construire des modèles prédictifs ou descriptifs pour résoudre des problématiques complexes.
+-   Missions : Modélisation statistique, machine learning, exploration de données avancée, recherche d’algorithmes.
+-   Outils courants : **Python** (scikit-learn, TensorFlow, PyTorch), R, SQL, notebooks Jupyter.
+-   Compétences clés : Mathématiques/statistiques, programmation, déploiement de modèles.
+:::
+
+## Date Engineer
+
+::: incremental
+-   Rôle principal : Concevoir, construire et maintenir l’infrastructure permettant de collecter, stocker et transformer les données.
+-   Missions : Développement de pipelines ETL/ELT, gestion des bases de données, optimisation des flux de données.
+-   Outils courants : SQL, Spark, Hadoop, Apache Airflow, outils cloud (Azure, AWS, GCP).
+-   Compétences clés : Architecture de données, programmation (**Python**, Scala, Java), gestion des big data.
+:::
+
+# Rôles complémentaires
+
+## Data Manager
+
+::: incremental
+-   Rôle principal : Superviser la collecte, l'organisation, la gouvernance et l'utilisation des données au sein de l'entreprise.
+-   Missions : Garantir la qualité, la sécurité, et la conformité des données (ex. RGPD), coordonner les équipes data, et établir des politiques de gestion des données.
+-   Outils courants : Outils de gestion de la qualité des données (Informatica, Talend), bases de données (SQL, NoSQL), outils de gouvernance (Collibra), ou processus custom.
+-   Compétences clés : Leadership, connaissance des normes et réglementations, stratégie en gouvernance des données.
+:::
+
+## IA Scientist
+
+::: incremental
+-   Rôle principal : Concevoir et implémenter des solutions d’intelligence artificielle pour automatiser ou améliorer les processus décisionnels.
+-   Missions : Développement de modèles d’IA avancés (deep learning, NLP, vision par ordinateur, RAG).
+-   Outils courants : **Python** (TensorFlow, PyTorch, Keras), frameworks spécialisés (Hugging Face pour NLP), outils cloud AI (Azure ML, AWS SageMaker).
+-   Compétences clés : Mathématiques avancées, programmation orientée IA, optimisation de modèles, capacité à déployer en production.
+:::
+
+## Cloud Engineer (orienté data)
+
+::: incremental
+-   Rôle principal : Concevoir et maintenir des solutions ETL (et dataviz) cloud.
+-   Missions : Déploiement et gestion des data lakes, data warehouses et pipelines dans le cloud, optimisation des coûts et des performances de l'architecture.
+-   Outils courants : Azure (Fabric, Data Factory, Synapse), AWS (Redshift, Glue), GCP (BigQuery), outils d’infrastructure as code (Terraform, Ansible).
+-   Compétences clés : Maîtrise des plateformes cloud, gestion des bases de données, compréhension des architectures serverless et big data.
+:::
+
+# Métiers Bonus:
+
+## Data Compliance Officer
+
+::: incremental
+-   Rôle principal : S’assurer que les pratiques de gestion des données respectent les réglementations (ex. RGPD, CCPA) et les politiques internes de l’entreprise.
+-   Missions : Évaluer les risques de non-conformité, mettre en œuvre des politiques de protection des données, sensibiliser les équipes aux exigences réglementaires.
+-   Outils courants : Logiciels de gestion des données, outils de suivi de conformité, bases de données pour l’audit.
+-   Compétences clés : Connaissance des réglementations, gestion de projets, collaboration inter-fonctionnelle (juridique, IT, métiers).
+:::
+
+## Auditeur d'IA
+
+::: incremental
+-   Rôle principal : Auditer les systèmes d’intelligence artificielle pour garantir leur conformité légale.
+-   Missions : Vérifier les biais algorithmiques, auditer les données d’entraînement, tester la robustesse et la transparence des modèles d’IA.
+-   Outils courants : Frameworks d’audit IA (Fairlearn, AI Fairness 360), outils de test des modèles (MLflow, Explainable AI).
+-   Compétences clés : ML, connaissance des principes éthiques et réglementations, capacité d’analyse critique pour identifier les risques.
+:::
+
+## Bilan métiers
+
+**Data Engineer :** Mise en place et gestion de l'infrastructure et des flux des données de la collecte à la restitution de la donnée (toute la chaine de vie de la data).
+
+**Data Scientist** : Création de modèles pour résoudre des problèmes complexes et enrichir les données et analyses en aval.
+
+**Data Analyst :** Compréhension, interprétation et représentation des données pour répondre au besoin exprimé par le client.
+
+![](images/scientist%20engineer%20analyst.JPG)
+
+# Projet data
+
+![](images/Méthodologie%20type%20du%20projet%20data-01.PNG)
+
+## Projet 1 : Trading
+
+## Projet 2 : Netflix movie recommendation algorithm
+
+::: panel-tabset
+### Généralités
+
+Projet Netflix initialement : https://en.wikipedia.org/wiki/Netflix_Prize
+
+::: incremental
+-   Objectif business
+
+    Retenir le client sur la plateforme
+
+-   Méthode
+
+    Améliorer les recommandations faites aux utilisateurs
+
+-   Quel professionnel de la data a un rôle majeur à jouer ici?
+
+    Le Data Scientist ! Besoin d'analyses approfondies/de modélisation
+:::
+
+### Effet age
+
+![](images/movie's%20age.JPG)
+:::
+
+# Acteurs
+
+## Cloud :
+
+La data est majoritairement décentralisée sur data-center/cloud (car les volumes sont vite limitants).
+
+Ex: Netflix movie recommendation algorithm.
+
+![](images/bigthree-01.png){width="500"}
+
+## "Hyperscalers"
+
+![](images/market%20shares.jpg){width="300"}
+
+## Azure
+
+![](images/azure%20capabilities.png) :::
+
+## Data Viz (visualisation)
+
+::: panel-tabset
+## Tableau
+
+![](images/Tableau.PNG)
+
+## Microsoft PowerBI
+
+![](images/powerbi.PNG)
+:::
+
+## Open-source
+
+![](images/open%20source%20data%20engineering-01.png)
+
+## Bilan acteurs
+
+Multiplicité : plateformes, langages, logiciels, type de licencing.
+
+Enjeu: Unicité. Un maximum d'usage distincts au même endroit, même gouvernance, même architecture etc. Notamment car IA
+
+Microsoft semble clairement en avance dans ce domaine.
+
+# Droit & Justice
+
+## France
+
+::: panel-tabset
+## Les prémices
+
+**1978** : Loi Informatique et Libertés
+
+La première loi française majeure en matière de protection des données, adoptée le 6 janvier 1978.
+
+Objectifs :
+
+1.  Protéger les libertés individuelles face au développement de l'informatique.
+
+2.  Réguler les traitements de données personnelles (collecte, utilisation, stockage).
+
+Création de la CNIL (Commission Nationale de l'Informatique et des Libertés), une autorité administrative indépendante chargée de veiller à l'application de la loi.
+
+## Ère numérique
+
+2004 : Révision de la loi Informatique et Libertés
+
+Intégration de la directive européenne de 1995 sur la protection des données personnelles.
+
+Introduction de nouveaux droits pour les citoyens, notamment le **droit d'accès** et de **rectification** des données.
+
+Renforcement des pouvoirs de contrôle et de sanction de la CNIL.
+
+## Harmonisation européenne
+
+Règlement Général sur la Protection des Données (RGPD)
+
+Adopté au niveau européen et entré en application le **25 mai 2018**.
+
+Objectifs :
+
+1.  Uniformiser la réglementation sur la protection des données personnelles dans l’UE.
+
+2.  Renforcer les droits des individus (portabilité des données, consentement explicite, droit à l’effacement).
+
+3.  Offrir à tout individu présent sur le territoire européen les mêmes droits face au traitement de ses données.
+
+4.  Imposer des obligations strictes aux entreprises (Privacy by Design, tenue de registres, notification des violations).
+
+Impacts en France : Adaptation de la loi Informatique et Libertés pour être compatible avec le RGPD.
+:::
+
+## Monde
+
+::: panel-tabset
+## Reste du monde
+
+Environ 70 pays ont mis en place une régulation directement inspirée du RGPD, qui fait figure de standard mondial.
+
+Paradigmes parfois opposés: Chine
+
+## USA
+
+Rien au niveau fédéral
+
+CCPA (California Consumer Privacy Act) – États-Unis (Entrée en vigueur : 1er janvier 2020).
+
+Objectif principal : Offrir aux **résidents** de Californie des droits ressemblants à ceux du RGPD, avec un accent sur la transparence et le contrôle des données personnelles.
+
+Droits des **consommateurs** :
+
+1.  Droit de savoir quelles données sont collectées, utilisées, vendues ou partagées.
+
+2.  Droit de demander la suppression des données personnelles.
+
+3.  Droit de refuser la vente de leurs données (opt-out).
+
+Obligations pour les entreprises d'informer les utilisateurs sur les données collectées, et leur permettre un accès et une suppression des données.
+
+Applicabilité variable : seules les entreprises générant plus de 25 millions USD de revenus ou manipulant des données de plus de 50 000 consommateurs californiens.
+
+Le CPRA (California Privacy Rights Act), en vigueur depuis 2023, renforce le CCPA avec de nouveaux droits et la création d'une agence dédiée à la protection des données.
+:::
+
+## Antitrust
+
+::: panel-tabset
+## Cloud
+
+![](images/arcep.jpg)
+
+Avis rendu par l'ARCEP en octobre 2024, consultation publique ouverte jusque mi-décembre 2024.
+
+Deux pistes proposées : - Encadrer les frais de transfert de données entre fournisseurs (à l'instar des Telecom) - Préciser les règles d'interoperabilité, de portabilité et d'ouverture des interfaces (= promouvoir le multi-plateformes)
+
+## IA
+
+L'Autorité de la Concurrence (FR) estime que Nvidia contrôlerait plus de 80% du marché de l'infrastructure IA.
+
+Inquiétudes:
+
+\- Fixation des prix
+
+\- Restrictions de production
+
+\- Conditions contractuelles injustes
+
+\- Comportement discriminatoires
+
+::: incremental
+-   Les USA (Department of Justice) s'interrogent également si l'entreprise a franchi le cap du monopole.
+
+    ![](images/action%20nvidia.JPG)
+:::
+:::
